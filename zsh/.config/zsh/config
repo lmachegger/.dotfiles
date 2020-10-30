@@ -8,11 +8,12 @@ setopt numericglobsort                                          # Sort filenames
 setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
+#setopt norcs
+#setopt zle
 setopt autocd                                                   # if only directory path is entered, cd there.
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
-#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path 
 # Speed up completions
 zstyle ':completion:*' accept-exact '*(N)'
@@ -58,11 +59,14 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
-alias ll='ls -l --color'
-alias la='ls -al --color'
-alias ls='ls --color'
+alias ll='ls -l --color=auto'
+alias la='ls -al --color=auto'
+alias ls='ls --color=auto'
 alias pac='sudo pacman'
 alias config='/usr/bin/git --git-dir=$HOME/Documents/repos/dotfiles-manjaro --work-tree=$HOME'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 # Theming section  
 autoload -U compinit colors zcalc
