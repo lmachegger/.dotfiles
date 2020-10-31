@@ -4,9 +4,6 @@
 
 [[ $- != *i* ]] && return
 
-# add local/bin to PATH
-PATH="$HOME/.local/bin${PATH:+:${PATH}}"  
-
 colors() {
 	local fgc bgc vals seq0
 
@@ -82,10 +79,6 @@ if ${use_color} ; then
 		PS1='\[\033[0;35m\][\[\033[0;36m\]\u \[\033[0;33m\]\w\[\033[0;35m\]] \[\033[0;32m\]\$\[\033[0m\] '
 	fi
 
-	alias ls='ls --color=auto'
-	alias grep='grep --colour=auto'
-	alias egrep='egrep --colour=auto'
-	alias fgrep='fgrep --colour=auto'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
@@ -99,22 +92,9 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-# some aliases
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-alias config='/usr/bin/git --git-dir=$HOME/Documents/dotfiles/ --work-tree=$HOME'
-alias ll='ls --color=auto'
-alias ll='ls -l --color=auto'
-alias la='ls -Al --color=auto'
-alias ..='cd ..'
-alias mv='mv -vi'
-alias rm='rm -vI'
-alias grep='grep --color=auto'
-alias pac="sudo pacman"
-alias zen="zensu"
+# source aliases from ~/.bash_aliases file
+. ~/.bash_aliases
+
 
 xhost +local:root > /dev/null 2>&1
 
