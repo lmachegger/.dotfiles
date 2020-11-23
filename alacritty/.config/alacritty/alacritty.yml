@@ -183,8 +183,9 @@ font:
 colors:
     # Default colors
     primary:
-        background: "#1B2224"
-        foreground: "#FFFFFF"
+        # background: "#1B2224"
+        background: "#15161B"
+        foreground: "#D3C7CF"
 
     # Bright and dim foreground colors
     #
@@ -216,10 +217,10 @@ colors:
         black: "#2E3436"
         red: "#CC0000"
         green: "#AFD700"
-        yellow: "#C49900"
-        blue: "#2EB398"
+        yellow: "#C4A000"
+        blue: "#3498DB"
         magenta: "#75507B"
-        cyan: "#3465A4"
+        cyan: "#06989A"
         white: "#D3D7CF"
 
     # Bright colors
@@ -227,10 +228,10 @@ colors:
         black: "#555753"
         red: "#EF2929"
         green: "#D7F458"
-        yellow: "#DFBB3D"
-        blue: "#73D8C3"
+        yellow: "#FCE94F"
+        blue: "#58B0EB"
         magenta: "#AD7FA8"
-        cyan: "#5594E5"
+        cyan: "#34E2E2"
         white: "#EEEEEC"
 
     # Dim colors
