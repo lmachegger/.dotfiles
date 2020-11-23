@@ -51,7 +51,7 @@ conky.config = {
 	font = 'Droid Sans:size=10',
 	color0 = 'white',
 	color1 = '#EAEAEA',
-	color2 = '#2EB398',
+	color2 = '#3498DB',
 	color3 = 'grey',
 
 };
