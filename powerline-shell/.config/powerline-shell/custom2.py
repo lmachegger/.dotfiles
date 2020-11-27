@@ -8,8 +8,8 @@ class DefaultColor(object):
     # be cleared
     RESET = -1
 
-    USERNAME_FG = 236
-    USERNAME_BG = 255   
+    USERNAME_FG = 4
+    USERNAME_BG = 15   
     USERNAME_ROOT_BG = 124
 
     HOSTNAME_FG = 250
@@ -20,7 +20,7 @@ class DefaultColor(object):
     HOME_FG = 15  # white
     PATH_BG = 237  # dark grey
     PATH_FG = 250  # light grey
-    CWD_FG = 254  # nearly-white grey
+    CWD_FG = 15  # nearly-white grey
     SEPARATOR_FG = 244
 
     READONLY_BG = 124
