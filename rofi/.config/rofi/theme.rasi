@@ -1,7 +1,7 @@
 * {
 /*background-color can be transparent as well, e.g.: #1B1D2450*/
   background-color: #1B1D24;
-  border-color: #1B1D24;
+  border-color: #AFB4BA;
   text-color: #AFB4BA;
   spacing: 0;
   width: 512px;
@@ -10,6 +10,7 @@
 
 inputbar {
   border: 0 0 1px 0;
+  border: 1px 1px 0 1px;
   children: [entry];
 }
 
@@ -21,7 +22,7 @@ prompt {
 textbox {
   background-color: #AFB4BA;
   border: 0 0 1px 0;
-  border-color: #282C33;
+  border-color: #AFB4BA;
   padding: 8px 14px;
 }
 
@@ -31,12 +32,12 @@ entry {
 
 listview {
   cycle: false;
-  margin: 0 0 -1px 0;
+  margin: 0 0 0 0;
   scrollbar: false;
+  border: 1px 1px 1px 1px;
 }
 
 element {
-  border: 0 0 1px 0;
   padding: 10px;
 }
 
